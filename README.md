@@ -30,8 +30,8 @@ graph TD
         J -- 是 --> K(信任度提升):::state;
         K --> L[进入更深层互动]:::action;
         L --> M((建立稳固联结)):::outcome;
-        K --> J; %% 信任提升可能带来持续正面互动
-end
+        K --> J;
+    end
 
     %% 子图4: 应对不安全路径
     subgraph "路径 B: 应对不安全感 (Handling Insecurity Path)"
