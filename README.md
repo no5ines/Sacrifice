@@ -58,13 +58,13 @@ graph TD
     %% 引入一个更复杂的内部冲突点
     subgraph "内在冲突点 (Internal Conflict)"
         conflict_node("害怕失去自我 vs 渴望亲密"):::conflict;
-        L --> conflict_node; %% 深度互动可能触发此冲突
-        O --> conflict_node; %% 减少开放也是此冲突的表现
-        T --> conflict_node; %% 即使理解增进，冲突依然存在
+        L --> conflict_node;
+        O --> conflict_node;
+        T --> conflict_node;
     end
 
-    conflict_node --> N; %% 内在冲突影响如何应对不安全感 (回到路径 B 的决策点)
-    conflict_node --> I; %% 内在冲突也影响是否决定多开放 (回到路径 A 的决策点)
+    conflict_node --> N;
+    conflict_node --> I;
 
     %% 最终可能状态的集合 (作为示例的简化终点)
     subgraph "可能的长期状态 (Potential Long-term States)"
@@ -77,4 +77,4 @@ graph TD
     Q --> EndB;
     Q --> EndC;
     P --> EndB;
-    H --> EndC; %% 持续不安全感可能导致关系破裂
+    H --> EndC;
